@@ -1,3 +1,9 @@
+.Logo{
+    margin: 10px 0px 10px 0px;
+    font-size: x-large;
+    font-weight: 800;
+    letter-spacing: 0.5rem;
+}
 .LogoSearch{
     display: flex;
     gap: 0.75rem;

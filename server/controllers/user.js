@@ -63,20 +63,20 @@ module.exports = {
   verifyToken: async (req, res) => {
     try {
       const Token = req.body.Token;
-      console.log("token",Token)
       const decoded = jwt.verify(Token, "myWebAppSecretKey123");
       const email = decoded.email;
       const user = await User.findOne({ email: email });
-      const userFollowing = await Following.findOne({ userId: user.id });
-      const userFollowers = await Followers.findOne({ userId: user.id });
-      const followingCount=userFollowing.following.length;
-      const followersCount=userFollowers.followers.length;
+      // const userFollowing = await Following.findOne({ userId: user.id });
+      // const userFollowers = await Followers.findOne({ userId: user.id });
+      // const followingCount=userFollowing.following.length;
+      // const followersCount=userFollowers.followers.length;
+      console.log("token",user)
 
 
-      if (user.image.url) user.image.url = user.image.url;
-      else
-        user.image.url = `https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png`;
-      return res.status(200).json({ message: "token valid", user ,followingCount ,followersCount});
+      // if (user.image.url) user.image.url = user.image.url;
+      // else
+      //   user.image.url = `https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png`;
+      return res.status(200).json({ message: "token valid", user });
     } catch (error) {
       console.log(error);
       res.json({ status: "error", error: "invalid token" });

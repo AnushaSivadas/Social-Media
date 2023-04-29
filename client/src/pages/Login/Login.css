@@ -3,56 +3,53 @@ body {
     /* filter: blur(22px); */
 }
 
-input{
+.login input{
     height: 50px;
     width: 300px;
     text-align: center;
     background: rgba(0, 0, 0, 0.3);
     border: 0;
     border-radius: 30px;
-    margin-bottom: 18px;
+    margin-bottom: 30px;
     color: white;
     font-size: 15px;
 }
-input::placeholder{
+.login input::placeholder{
     color: white;
 }
-input:hover{
+.login input:hover{
     cursor: pointer;
     box-shadow: 0 12px 14px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
-input:focus {
-    border: 1px solid #1670BE;
-}
-button{
+.login button{
     height: 50px;
     width: 300px;
     text-align: center;
-    background: #FF9DFF;
+    background: #ff9dff;
     border: 0;
     border-radius: 30px;
-    margin-bottom: 22px;
+    margin-bottom: 30px;
     color: white;
     font-size: 15px;
 }
-button:hover{
+.login button:hover{
     cursor: pointer;
     box-shadow: 0 12px 14px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
-.google_button{
+.login .google_button{
     height: 30px;
     width: 30px;
     border-radius: 5px;
     background:black;
 }
-.container {
+.login .container {
     height: 774px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.main-container {
+.login .course-container {
     position: absolute;
     width: 70%;
     height: 75%;
@@ -60,23 +57,23 @@ button:hover{
     border-radius: 30px;
 }
 
-.image-container {
+.login .image1-container {
     margin-left: 50px;
     position: relative;
-    background-image: url('2181616.png');
+    background-image: url('src/img/landing.png');
     background-size: contain;
     width: 550px;
     height: 100%;
-    float: right;
+    float: left;
 }
 
-.detail-container {
+.login .detail-container {
     height: 100%;
     /* display: flex;
     justify-content: center; */
     font-family: unset;
     font-weight: initial;
 }
-.form-content{
+.login .form-content{
     text-align: center;
 }

@@ -1,5 +1,5 @@
 :root {
-  --yellow: #f5c32c;
+  --yellow: #f52cb9;
   --orange: #ff9dff;
   --black: #242d49;
   --gray: rgba(36, 45, 73, 0.65);
@@ -16,7 +16,7 @@
 .App{
   overflow: hidden;
   color:var(--black);
-  background: #c2d2fc7a;
+  background: #ec90fa7a;
   padding: 1rem 1rem;
 }
 

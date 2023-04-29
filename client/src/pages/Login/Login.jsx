@@ -16,9 +16,6 @@ function Login() {
   const [password, setPassword] = useState('');
 
 
-
-
-
   useEffect(() => {
     const Token = localStorage.getItem("token");
     console.log("token", Token);
@@ -64,6 +61,7 @@ function Login() {
   }
     return (
         // <Container>
+        <div className="login">
             <div className='container'>
                 <div className='course-container'>
                     <div className='image1-container'></div>
@@ -76,18 +74,19 @@ function Login() {
                             <input type="password" placeholder='Password' value={password}
                         onChange={(e) => { setPassword(e.target.value) }} />
                             <div>
-                                <p style={{ marginTop: '-20px', marginInline:'-170px' }}>forgot password?</p>
+                                <p style={{ marginTop: '-20px', marginInline:'-170px' ,fontSize:"13px"}}>forgot password?</p>
                             </div>
                             <button type='submit'>Login</button>
                             <p style={{ marginTop: '-20px' }}>OR</p>
-                            <Link to={'/register'}><button>Signup</button></Link>
+                            <button><i class="fa-brands fa-google"></i>   Sign in with Google</button>
                             <div>
-                                <button className='google_button'><i class="fa-brands fa-google"></i></button>
+                              Don't have an account?<Link to={'/register'} style={{ textDecoration: "none" , fontWeight:"bold"}}> Sign Up for free</Link>
                             </div>
 
                         </form>
                     </div>
                 </div>
+            </div>
             </div>
         // </Container>
     )

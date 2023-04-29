@@ -4,7 +4,7 @@ import './Register.css'
 import { useState,useEffect } from 'react';
 import axios from '../../utils/axios'
 import { signUpPost } from '../../utils/Constants';
-import { useNavigate } from 'react-router-dom'
+import { Link,useNavigate } from 'react-router-dom'
 import Swal from "sweetalert2";
 
 function Register() {
@@ -54,6 +54,7 @@ function Register() {
     }
   return (
     // <Container>
+    <div className="register">
             <div className='container'>
                 <div className='main-container'>
                     <div className='image-container'>
@@ -71,13 +72,18 @@ function Register() {
                                                 onChange={(e) => { setPassword(e.target.value) }}/>
                             <button type='submit'>Signup</button>
                             <p style={{ marginTop: '-20px' }}>OR</p>
+                            <button type='submit'><i class="fa-brands fa-google"></i>   Signup with google</button>
                             <div>
-                                <button className='google_button'><i class="fa-brands fa-google"></i></button>
+                              Already have an account?<Link to={'/login'} style={{ textDecoration: "none" , fontWeight:"bold"}}> Login Here</Link>
                             </div>
+                            {/* <div>
+                                <button className='google_button'><i class="fa-brands fa-google"></i></button>
+                            </div> */}
 
                         </form>
                     </div>
                 </div>
+            </div>
             </div>
         // </Container>
   )

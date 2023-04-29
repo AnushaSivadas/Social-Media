@@ -7,8 +7,7 @@ import userFollowingReducer from './userFollowingReducer'
 
 const store=configureStore({
     reducer:{
-        username:usernameReducer
-        ,
+        username:usernameReducer,
         userImage:userImageReducer,
         userFollowing:userFollowingReducer
 
