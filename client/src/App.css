@@ -16,7 +16,8 @@
 .App{
   overflow: hidden;
   color:var(--black);
-  background: #ec90fa7a;
+  background: #eec4f57a;
+  /* background: linear-gradient(116.12deg, #ecf2f3 5.99%, #c6e5f5 42.85%, #fbcdfb 93.83%); */
   padding: 1rem 1rem;
 }
 

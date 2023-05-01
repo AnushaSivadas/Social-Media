@@ -16,11 +16,13 @@ function SideNav() {
 
   return (
     <div className='SideNav'>
-        <p className='menuname'>&nbsp;&nbsp;Menu</p>
+        {/* <p className='menuname'>&nbsp;&nbsp;Menu</p> */}
         <ul className='listitems'>
             <li className='list'><i class="fa-sharp fa-solid fa-house"></i>&nbsp;&nbsp;&nbsp;Home</li>
+            <li className='list'><i class="fa-solid fa-search"></i>&nbsp;&nbsp;&nbsp;Search</li>
             <li className='list'><i class="fa-solid fa-inbox"></i>&nbsp;&nbsp;&nbsp;Messages</li>
             <li className='list'><i class="fa-solid fa-bell"></i>&nbsp;&nbsp;&nbsp;Notifications</li>
+            <li className='list'><i class="fa-solid fa-user"></i>&nbsp;&nbsp;&nbsp;Profile</li>
             <li onClick={logout} className='list'><i class="fa-solid fa-right-from-bracket"></i>&nbsp;&nbsp;&nbsp;Logout</li>
                             
         {/* <Link to={'/profile'} style={{ textDecoration: 'none', color: 'inherit' }}>   <li className='list'><i class="fa-solid fa-user"></i>&nbsp;&nbsp;&nbsp;Profile</li></Link> */}

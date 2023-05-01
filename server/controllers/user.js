@@ -241,7 +241,6 @@ console.log(usersData,"hgkujjfguj")
         { $addToSet: { followers: followedData } },
         { new: true }
       );
-      console.log("gjhfmh",user)
       const users = await User.find({ _id: { $not: { $eq: decoded.id } } }).select("-password");
 
 

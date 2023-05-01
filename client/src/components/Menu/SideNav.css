@@ -2,19 +2,25 @@
     list-style: none;
     line-height: 60px;
     font-size: 15px;
-    margin-left: -15px;
+    /* margin-left: -15px; */
 }
-.menuname{
+/* .menuname{
     margin-inline-start: 20px;   
     letter-spacing: 5px;
     margin-top: 30px;
-}
+    font-size: 20px;
+    margin-bottom: -15px;
+} */
 .list{
     transition: transform .2s;
 }
+.list>i{
+    font-size: 20px;
+    margin-right: 10px;
+}
 .list:hover{
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 .SideNav{
     width: 100%;
